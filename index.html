@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>My First Portfolio!</title>
+		<title>My Portfolio!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -14,7 +14,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
+						<h1><a href="index.html">A Little About Me!</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -25,7 +25,12 @@
 						<div class="inner">
 							<h2>Menu</h2>
 							<ul class="links">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="#page-wrapper">Home</a></li>
+								<li><a href="#two">Education</a></li>
+								<li><a href="#three">Recent Experience</a></li>
+								<li><a href="#four">Personal/School Projects</a></li>
+								<li><a href="#" onclick='window.open("images/PatrickChansResume.pdf");return false;'>Resume</a></li>
+								<li><a href="#five">Contact Me!</a></li>
 
 							</ul>
 							<a href="#" class="close">Close</a>
@@ -80,19 +85,19 @@
 									<a href="#"><img src="images/Davis.png" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Educational Background</h2>
-										<p>As I might have mentioned I recenlt graduated from The University of California-Davis, with a major in Computer Science.
+										<p>As I might have mentioned I recently graduated from The University of California-Davis, with a major in Computer Science.
 											Here I had many different exposures to things like machine learning, Relational Databases, Algorithims, OOP, Software Enginerring
 											Practices and standards, and computer graphics. However, during my time at UC Davis I also fell in love with Histroy. Especially, Middle
 											Eastern history. During my studies in both CS and History I got to work with some wonderful smart people and perservered with some who were
-											less cooperative. Nevertheless, I cherised my time at Davis and hope to contiune my journey in Computer Science!
+											less cooperative. Nevertheless, I cherised my time at Davis and hope to continue my journey in Computer Science!
 										</p>
-										<a href="#" class="special">Unofficail Transcript (Ask for Official Document)</a>
+										<a href="#" onclick='window.open("images/transcriptUCD.pdf");return false;' class="special">Unofficail Transcript (Ask for Official Document)</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Three -->
-							<section id="two" class="wrapper spotlight style1">
+							<section id="three" class="wrapper spotlight style1">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/NisumLogo.png" alt="" /></a>
 									<div class="content">
@@ -102,15 +107,15 @@
 											developing a shopping grid, updating inventory database after purchase, updating/displaying order status, creating endpoints to
 											access/update the database, and account authorization.
 										</p>
-										<a href="#" class="special">Resume</a>
+										<a href="#" onclick='window.open("images/PatrickChansResume.pdf");return false;' class="special">Resume</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- four -->
-							<section id="banner" class="wrapper alt spotlight style1">
-								<div class="inner">
-									<div class="content">
+							<section id = "banner" >
+								<div id ="four" class="inner">
+									<div  class="content">
 										<h2 class="major">Personal/School Projects</h2>
 										<p>Here are some of the projects I have worked on!
 										</p>
@@ -118,31 +123,52 @@
 								</div>
 							</section>
 
-							<section id="four" class="wrapper alt spotlight style4">
+							<section class="wrapper alt spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/Lstore.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">LStore database</h2>
+										<p>The overall goal of this project was to replicate the Lineage-based Data Store(L-Store) created by our Professor Mohammad Sadoghi.
+											A database that aims to manage data that is constantly being updated and at the same time analyzing large sets of data, using a
+											lineage-based storage architecture. You can read more about this Database and its design here<br>
+											[<a target="_blank" rel="noopener noreferrer" href="https://www.researchgate.net/publication/324150481_L-Store_A_Real-time_OLTP_and_OLAP_System">
+												L-Store: A Real-time OLTP and OLAP System
+											</a>].
+										</p>
+										<a href="#" onclick='window.open("https://github.com/JMalegaonkar/HTAP-Database");return false;' class="special">Github Repo</a>
+									</div>
+								</div>
+							</section>
+
+							<section class="wrapper  spotlight style2">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/sos.png" alt="" /></a>
 									<div class="content">
 										<h2 class="major">The Sultans of Suggestion</h2>
-										<p>the game genre is a roguelike 2D bullet hell game, where the player starts in a dungeon room and needs to beat the boss. 
+										<p>The game genre is a roguelike 2D bullet hell game, where the player starts in a dungeon room and needs to beat the boss. 
 											The player will progress through rooms and gain upgrades until they reach the final boss. These upgrades will be represented 
 											in card format and there will both be generally positive options as well as other options that are more chaotic and have some 
 											extra kind of negative effect. Mobs that must be slain to progress will spawn in rooms as the player progresses, slowly ascending 
 											in difficulty as they approach the boss.
 										</p>
-										<a href="https://cmpires.itch.io/the-sultans-of-suggestion" class="special">Playable development version</a>
+										<a href="#" onclick='window.open("https://cmpires.itch.io/the-sultans-of-suggestion");return false;'class="special">Playable development version</a>
 									</div>
 								</div>
 							</section>
 
-							<section id="four" class="wrapper spotlight style1">
+							
+
+							<section class="wrapper alt spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/Lstore.png" alt="" /></a>
+									<a href="#" class="image"><img src="images/stock_credit_card.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">LStore database</h2>
-										<p>The overall goal of this milestone is to create a multi-threaded and durable L-Store
-											[<a href="https://www.researchgate.net/publication/324150481_L-Store_A_Real-time_OLTP_and_OLAP_System">Paper</a>], capable of performing transactions.
+										<h2 class="major">Credit Card Approval</h2>
+										<p>Here my group and I proposed a machine learning model to help applicants gauge their credit worthiness before applying for a 
+											credit card, helping them avoid an unnecessary credit score drop from a hard pull on their credit report. In this project we trained
+											four supervised learning models; Logistic Regression, XGBoost(Decision Tree), Multi-layer Perception, and a Support Vector Machine(SVM).
+											You can read more about our findings in the paper linked below!
 										</p>
-										<a href="https://github.com/JMalegaonkar/HTAP-Database" class="special">Github Repo</a>
+										<a href="#" onclick='window.open("images/Credit_Card_Prediction__Our_Analysis_.pdf");return false;' class="special">Term Paper</a>
 									</div>
 								</div>
 							</section>
@@ -152,7 +178,7 @@
 				
 				<!-- Footer -->
 					<section id="footer">
-						<div class="inner">
+						<div id = "five" class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>Please Feel free to contact me with any of these methods</p>
 							<ul class="contact cols2">

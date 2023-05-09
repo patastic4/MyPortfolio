@@ -2488,10 +2488,10 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
-		ul.cols4{
-			columns: 4;
-			-webkit-columns: 4;
-			-moz-columns: 4;
+		ul.cols2{
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;
 			display: inline-block;
 			text-align: left;
 			
